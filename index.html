@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.D. TRANS I.K.E. | Global Freight Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #004a99;
+            --accent-orange: #f39c12;
+            --dark-navy: #0a192f;
+            --light-gray: #f4f4f4;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: var(--white); color: #333; line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* HERO SECTION */
+        .hero { 
+            height: 80vh; 
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
+                        url('https://images.unsplash.com/photo-1519003722824-192d99a24bb5?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;
+            display: flex; 
+            align-items: center; 
+            color: var(--white);
+        }
+        .hero-content { max-width: 800px; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 20px; }
+        .hero span { color: var(--accent-orange); }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .btn { 
+            display: inline-block; padding: 15px 40px; background: var(--primary-blue); color: var(--white); 
+            text-decoration: none; font-weight: 700; text-transform: uppercase; 
+            transition: 0.3s; border-radius: 3px; 
+        }
+        .btn:hover { background: var(--accent-orange); transform: translateY(-3px); }
+
+        /* SERVICES */
+        section { padding: 100px 0; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 2.5rem; position: relative; padding-bottom: 15px; }
+        .section-header h2::after { content: ''; width: 60px; height: 3px; background: var(--accent-orange); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-item { padding: 40px; background: var(--light-gray); border-top: 5px solid var(--primary-blue); transition: 0.3s; }
+        .service-item:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .service-item h3 { margin-bottom: 15px; color: var(--dark-navy); }
+
+        /* INFO BAR */
+        .info-bar { background: var(--dark-navy); color: var(--white); padding: 60px 0; }
+        .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; gap: 20px; }
+        .info-box strong { display: block; font-size: 1.5rem; color: var(--accent-orange); font-family: 'Oswald'; }
+
+        /* CONTACT */
+        .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-info h2 { margin-bottom: 20px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 4px; }
+
+        /* FOOTER */
+        footer { background: #050b14; color: #667085; padding: 50px 0; font-size: 0.9rem; }
+        .footer-logo { color: var(--white); font-family: 'Oswald'; font-size: 1.5rem; margin-bottom: 15px; display: block; }
+
+        @media (max-width: 768px) {
+            .contact-wrap, .info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p>Reliable Freight & Logistics</p>
+                <h1>K.D. <span>TRANS</span> I.K.E.</h1>
+                <a href="#quote" class="btn">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="info-bar">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-box">
+                    <strong>Primary Location</strong>
+                    Glyfada, Greece
+                </div>
+                <div class="info-box">
+                    <strong>Principal Officer</strong>
+                    D. P. Krassopoulos
+                </div>
+                <div class="info-box">
+                    <strong>Sector</strong>
+                    General Freight Trucking
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Core Expertise</h2>
+            </div>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>General Freight</h3>
+                    <p>Efficient transportation of diversified goods across domestic and international routes with a focus on safety and timing.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Trucking & Transport</h3>
+                    <p>Modern fleet management ensuring specialized handling for non-local and long-haul delivery requirements.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Logistics Strategy</h3>
+                    <p>Integrated supply chain solutions including warehousing and freight arrangement to optimize your business operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <h2>Ready to move?</h2>
+                    <p>Contact K.D. TRANS I.K.E. for professional logistics consulting and freight scheduling.</p>
+                    <div style="margin-top: 30px;">
+                        <strong>Email:</strong><br>
+                        info@kdtransgr.org
+                    </div>
+                </div>
+                <form style="background: white; padding: 40px; border-radius: 5px;">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Shipment Details"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <span class="footer-logo">K.D. TRANS I.K.E.</span>
+            <p>
+                Kyrillou Methodiou 4, 16561, Glyfada, Greece.<br>
+                &copy; 2026 K.D. TRANS I.K.E. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
